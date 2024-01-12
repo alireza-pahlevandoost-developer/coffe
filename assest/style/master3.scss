@@ -1,0 +1,1139 @@
+%bt {
+    border: 1px solid red;
+}
+
+%bgc {
+    background-color: aqua;
+}
+
+$color1: rgb(237, 237, 237);
+$color2: rgb(120, 91, 36);
+
+.hed {
+    width: 15%;
+    height: 100%;
+    // @extend %bt;
+    position: fixed;
+
+    div {
+        // @extend %bt;
+        background-color:rgb(40,43,47);
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        >a {
+            display: flex;
+            width: 120px;
+            height: 120px;
+
+
+
+
+            >img {
+                width: 100%;
+                height: 100%;
+                border-radius: 80px;
+
+            }
+
+        }
+
+    }
+
+    >nav {
+        height: 50%;
+        // @extend %bt;
+        background-color: rgb(40,43,47);
+
+
+        >ul {
+            width: 100%;
+            height: 70%;
+            // @extend %bgc;
+
+
+
+            >li {
+                width: 100%;
+                height: 53px;
+                // background-color: blueviolet;
+                display: flex;
+                // @extend %bt;
+                border-top: 1px solid rgb(49, 48, 48);
+
+                &:nth-of-type(3)>a {
+                    color: $color2;
+                }
+
+                &:nth-of-type(6) {
+                    border-bottom: 1px solid rgb(49, 48, 48);
+                    ;
+                }
+
+
+                >a {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 10px;
+                    color: $color1;
+                    text-transform: uppercase;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: $color2;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .ic {
+        width: 100%;
+        height: 20%;
+        display: flex;
+
+        >a {
+            display: flex;
+            width: 40px;
+            height: 30px;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: rgb(98, 94, 94);
+            }
+
+            >svg {
+                width: inherit;
+                height: inherit;
+                transition: 04s;
+                display: flex;
+                padding: 5px;
+
+
+            }
+
+
+        }
+    }
+}
+
+.row {
+    >.row1 {
+        width: 100%;
+        height: 480px;
+        // @extend %bt;
+        background-image: url(../image/food-drink-banner1.jpg);
+        //  background-position: center;
+        background-size: cover;
+        background-position-x: 70px;
+        background-position-y: -150px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >.row2 {
+            width: 500px;
+            height: 250px;
+            // @extend %bt;
+            margin-left: 170px;
+
+            >h2 {
+                font-size: 35px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $color1;
+                text-align: center;
+                margin-top: 40px;
+
+            }
+
+            >span {
+                display: block;
+                width: 130px;
+                height: 1px;
+                border: 1px solid $color2;
+                margin-top: 15px;
+                margin-left: 190px;
+            }
+
+            >p {
+                font-size: 20px;
+                color: $color1;
+                margin-top: 30px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+.food1 {
+    width: 100%;
+    height: 600px;
+    // @extend %bt;
+    display: flex;
+    background-color:#313539;
+
+    >.f1 {
+        width: 70%;
+        height: 100%;
+
+        // @extend %bt;
+        >.me1 {
+            width: 520px;
+            height: 350px;
+            // @extend %bt;
+            margin-left: 280px;
+            margin-top: 110px;
+
+            >h3 {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $color1;
+                font-size: 25px;
+            }
+
+            >span {
+                width: 115px;
+                height: 1px;
+                border: 1px solid $color2;
+                display: block;
+                margin-top: 12px;
+            }
+
+            >h4 {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $color1;
+                font-size: 17px;
+                margin-top: 40px;
+            }
+
+            >p {
+                color: $color2;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 10px;
+                margin-top: 5px;
+            }
+        }
+
+    }
+
+    >.f2 {
+        width: 35%;
+        height: 100%;
+
+        // @extend %bt;
+        >p {
+            margin-left: 40px;
+            margin-top: 40px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: $color2;
+            font-size: 10px;
+        }
+
+        >h3 {
+            margin-left: 40px;
+            margin-top: 6px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: $color1;
+
+        }
+
+        >figure {
+            width: 100%;
+            height: 467px;
+            // @extend %bt;
+            margin-top: 54px;
+            overflow: hidden;
+
+            >img {
+                width: inherit;
+                height: inherit;
+
+            }
+        }
+    }
+}
+
+.food2 {
+
+    height: 600px;
+    // @extend %bt;
+    display: flex;
+    background-color: rgb(27, 26, 26);
+
+    >.f3 {
+        width: 70%;
+        height: 100%;
+
+        // @extend %bt;
+        >.me2 {
+            width: 520px;
+            height: 350px;
+            // @extend %bt;
+            margin-left: 280px;
+            margin-top: 110px;
+
+            >h3 {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $color1;
+                font-size: 25px;
+            }
+
+            >span {
+                width: 115px;
+                height: 1px;
+                border: 1px solid $color2;
+                display: block;
+                margin-top: 12px;
+            }
+
+            >h4 {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $color1;
+                font-size: 17px;
+                margin-top: 40px;
+            }
+
+            >p {
+                color: $color2;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 10px;
+                margin-top: 5px;
+            }
+        }
+
+    }
+
+    >.f4 {
+        width: 35%;
+        height: 100%;
+
+        // @extend %bt;
+        >p {
+            margin-left: 40px;
+            margin-top: 40px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: $color2;
+            font-size: 10px;
+        }
+
+        >h3 {
+            margin-left: 40px;
+            margin-top: 6px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: $color1;
+
+        }
+
+        >figure {
+            width: 100%;
+            height: 467px;
+            // @extend %bt;
+            margin-top: 54px;
+            overflow: hidden;
+
+            >img {
+                width: inherit;
+                height: inherit;
+
+            }
+        }
+    }
+}
+
+.food3 {
+    width: 100%;
+    height: 600px;
+    // @extend %bt;
+    display: flex;
+    background-color: #313539;
+
+    >.f5 {
+        width: 70%;
+        height: 100%;
+
+        // @extend %bt;
+        >.me3 {
+            width: 520px;
+            height: 350px;
+            // @extend %bt;
+            margin-left: 280px;
+            margin-top: 110px;
+
+            >h3 {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $color1;
+                font-size: 25px;
+            }
+
+            >span {
+                width: 115px;
+                height: 1px;
+                border: 1px solid $color2;
+                display: block;
+                margin-top: 12px;
+            }
+
+            >h4 {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                color: $color1;
+                font-size: 17px;
+                margin-top: 40px;
+            }
+
+            >p {
+                color: $color2;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 10px;
+                margin-top: 5px;
+            }
+        }
+
+    }
+
+    >.f6 {
+        width: 35%;
+        height: 100%;
+
+        // @extend %bt;
+        >p {
+            margin-left: 40px;
+            margin-top: 40px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: $color2;
+            font-size: 10px;
+        }
+
+        >h3 {
+            margin-left: 40px;
+            margin-top: 6px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            color: $color1;
+
+        }
+
+        >figure {
+            width: 100%;
+            height: 467px;
+            // @extend %bt;
+            margin-top: 54px;
+            overflow: hidden;
+
+            >img {
+                width: inherit;
+                height: inherit;
+
+            }
+        }
+    }
+}
+
+.food4 {
+    width: 100%;
+    height: 320px;
+    // @extend %bt;
+    display: flex;
+
+    >.f7 {
+        height: 100%;
+        width: 45%;
+        // @extend %bt;
+        background-color: rgb(42, 41, 41);
+
+        >.f71 {
+            width: 330px;
+            height: 300px;
+            margin-left: 245px;
+            margin-top: 10px;
+            // @extend %bt;
+
+            >h5 {
+                margin-top: 50px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 30px;
+                color: $color1;
+
+            }
+
+            >span {
+                display: block;
+                width: 112px;
+                height: 1px;
+                border: 1px solid $color2;
+                margin-top: 20px;
+            }
+
+            >p {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 12px;
+                color: $color1;
+                margin-top: 20px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .f8 {
+        height: 100%;
+        width: 25%;
+        // @extend %bt;
+        background-color: rgb(27, 26, 26);
+        .f81{
+            width: 250px;
+            height: 250px;
+            // @extend %bt;
+            margin-left: 50px;
+            margin-top: 50px;
+           
+            >p{
+               
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 11px;
+                color: $color1;
+                padding-top: 12px;
+            }
+        }
+    }
+
+    .f9 {
+        height: 100%;
+        width: 30%;
+        // @extend %bt;
+        >figure{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            >img{
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+
+}
+.box2 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/parallax-image\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+    background-position-y: -195px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+
+    .bt {
+        width: 750px;
+        height: 300px;
+        // @extend %bt;
+
+        >.bt1 {
+            width: 250px;
+            height: 60px;
+            // @extend %bt;
+            margin-top: 40px;
+            margin-left: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >h3 {
+                display: flex;
+                color: $color1;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                font-size: 25px;
+            }
+
+
+        }
+
+        >span {
+            display: block;
+            width: 108px;
+            height: 1px;
+            border: 1px solid rgb(150, 128, 87);
+            margin-left: 350px;
+            margin-top: 5px;
+        }
+
+        .bt2 {
+            width: 550px;
+            height: 60px;
+            // @extend %bt;
+            margin-left: 120px;
+            margin-top: 15px;
+
+            >p {
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                text-transform: capitalize;
+                color: $color1;
+                font-size: 13px;
+                line-height: 25px;
+                text-align: center;
+            }
+
+        }
+
+        >.bt3 {
+            width: 125px;
+            height: 35px;
+            // @extend %bt;
+            margin-top: 2px;
+            margin-left: 350px;
+            display: flex;
+
+            >a {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                color: $color1;
+                font-size: 10px;
+                border: 1px solid $color1;
+                border-radius: 5px;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: rgb(98, 98, 98);
+                }
+
+
+            }
+
+        }
+    }
+
+}
+.box3 {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    // @extend %bt;
+
+    >.bx {
+        width: 57%;
+        height: inherit;
+        // @extend %bt;
+        background-color: rgb(27, 26, 26);
+
+        >.s1 {
+            width: 450px;
+            height: 190px;
+            margin-left: 250px;
+            margin-top: 40px;
+            // @extend %bt;
+
+            .bxp {
+                width: 120px;
+                height: 30px;
+                // @extend %bt;
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >p {
+                    font-size: 10px;
+                    color: $color2;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    text-transform: uppercase;
+
+                }
+
+            }
+
+            >span {
+                display: block;
+                width: 130px;
+                height: 1px;
+                border: 1px solid rgb(145, 113, 65);
+                margin-top: 2px;
+            }
+
+            >.bxp1 {
+                width: 430px;
+                height: 70px;
+                // @extend %bt;
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >p {
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    color: $color1;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+
+            >.bxa {
+                width: 135px;
+                height: 35px;
+                // @extend %bt;
+                margin-top: 10px;
+                display: flex;
+
+                >a {
+                    display: flex;
+                    width: inherit;
+                    height: inherit;
+                    border: 1px solid $color1;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 12px;
+                    border-radius: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: capitalize;
+                    color: $color1;
+
+                    &:hover {
+                        background-color: rgb(114, 107, 107);
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+    >.bx1 {
+        width: 43%;
+        height: inherit;
+        // @extend %bt;
+        background-color: #313539;
+
+        >.s2 {
+            width: 450px;
+            height: 190px;
+            // @extend %bt;
+            margin-left: 40px;
+            margin-top: 40px;
+
+            >.bx1p {
+                width: 120px;
+                height: 30px;
+                // @extend %bt;
+                margin-top: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >p {
+                    font-size: 10px;
+                    color: $color2;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    text-transform: uppercase;
+
+                }
+            }
+
+            >span {
+                display: block;
+                width: 130px;
+                height: 1px;
+                border: 1px solid rgb(145, 113, 65);
+                margin-top: 2px;
+            }
+
+            >.bx1p1 {
+                width: 430px;
+                height: 70px;
+                // @extend %bt;
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                >p {
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    color: $color1;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+
+            >.bx1a {
+                width: 135px;
+                height: 35px;
+                // @extend %bt;
+                margin-top: 10px;
+                display: flex;
+
+                >a {
+                    display: flex;
+                    width: inherit;
+                    height: inherit;
+                    border: 1px solid $color1;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 12px;
+                    border-radius: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: capitalize;
+                    color: $color1;
+
+                    &:hover {
+                        background-color: rgb(114, 107, 107);
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.box4 {
+    width: 100%;
+    height: 386px;
+    // @extend %bt;
+   >* {
+        width: 290px;
+        height: inherit;
+        // @extend %bt;
+        
+
+    }
+
+    >.ip1 {
+        >figure {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transition: 0.4s;
+
+            .img {
+                width: 100%;
+                height: 100%;
+
+
+            }
+        }
+    }
+
+    >.ip2 {
+        >figure {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+           
+
+
+            .img {
+                width: 100%;
+                height: 100%;
+
+
+            }
+        }
+    }
+
+    >.ip3 {
+        >figure {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          
+
+
+            .img {
+                width: 100%;
+                height: 100%;
+
+
+            }
+        }
+    }
+
+    >.ip4 {
+        >figure {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+           
+
+
+            .img {
+                width: 100%;
+                height: 100%;
+
+
+
+
+            }
+        }
+    } display: flex;
+    margin-left: 201px;
+
+    
+}
+
+.box5 {
+
+    width: 100%;
+    height: 90px;
+    // @extend %bt;
+    display: flex;
+    margin-left: 201px;
+    background-color: rgb(12, 12, 12);
+    >.a1{
+        width: 290px;
+        height: inherit;
+        // @extend %bt;
+        display: flex;
+        justify-content: center;
+         align-items: center;
+        >a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 40px;
+            color: $color1;
+            text-transform: uppercase;
+            transition: 0.4s;
+            &:hover{
+                color: $color2;
+            }
+
+
+        }
+    }
+    >.a2{
+        width: 290px;
+        height: inherit;
+        // @extend %bt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       >a{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 200px;
+           height: 40px;
+           color: $color1;
+           text-transform: uppercase;
+           transition: 0.4s;
+           font-size: 18px;
+           &:hover{
+               color: $color2;
+           }
+
+
+       }
+    }
+    >.a3{
+        width: 290px;
+        height: inherit;
+        // @extend %bt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       >a{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 200px;
+           height: 40px;
+           color: $color1;
+           text-transform: uppercase;
+           transition: 0.4s;
+           &:hover{
+               color: $color2;
+           }
+
+
+       }
+    }
+    >.a4{
+        width: 290px;
+        height: inherit;
+        // @extend %bt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       >a{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 200px;
+           height: 40px;
+           color: $color1;
+           text-transform: uppercase;
+           transition: 0.4s;
+           &:hover{
+               color: $color2;
+           }
+
+
+       }
+    }
+}
+.box6{
+    width: 100%;
+    height: 450px;
+    background-color:#313539;
+    display: flex;
+    >.s6{
+        width:1050px;
+        height: 400px;
+        // @extend %bt;
+        margin-left: 250px;
+        margin-top: 30px;
+        >.s7{
+            width: 1050px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // @extend %bt;
+            border-bottom: 1px solid rgb(49, 48, 48);
+            >figure{
+                display: flex;
+                width: 125px;
+                height: 125px;
+                // @extend %bt;
+                >img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        >.s8{
+            width: 450px;
+            height: 130px;
+            margin-left: 300px;
+            display: flex;
+            // @extend %bt;
+            >.s81{
+                width: 150px;
+                height: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // @extend %bt;
+                >svg{
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: rgb(91, 91, 89);
+                    }
+                }
+                >a{
+                    display: flex;
+                    color: $color1;
+                    text-transform: uppercase;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 10px;
+                    transition: 0.4s;
+                    padding-left: 5px;
+                    &:hover{
+                        color: $color2;
+                    }
+                }
+            }
+            >.s82{
+                width: 150px;
+                height: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // @extend %bt;
+                >svg{
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: rgb(91, 91, 89);
+                    }
+                }
+                >a{
+                    display: flex;
+                    color: $color1;
+                    text-transform: uppercase;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 11px;
+                    transition: 0.4s;
+                    padding-left: 5px;
+                    &:hover{
+                        color: $color2;
+                    }
+                }
+            }
+            >.s83{
+                width: 150px;
+                height: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // @extend %bt;
+                >svg{
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: rgb(91, 91, 89);
+                    }
+                }
+                >a{
+                    display: flex;
+                    color: $color1;
+                    text-transform: uppercase;
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    font-size: 11px;
+                    transition: 0.4s;
+                    padding-left: 5px;
+                    &:hover{
+                        color: $color2;
+                    }
+                }
+            }
+        }
+        >.s9{
+            width: 1050px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // @extend %bt;
+            border-top: 1px solid rgb(49, 48, 48);
+            >div{
+                width: 300px;
+                height: 130px;
+                // @extend %bt;
+                margin-top: 20px;
+                
+                >p {
+                    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                    text-transform: capitalize;
+                    font-size: 12px;
+                    text-align: center;
+                    color: $color1;
+                    line-height: 40px;
+                    transition: 0.4s;
+                    padding-top: 20px;
+                    margin: 5px;
+
+                    &:hover {
+                        color: $color2;
+                       
+                    }
+                }
+            }
+        }
+    }
+}

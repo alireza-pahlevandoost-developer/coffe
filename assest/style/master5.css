@@ -1,0 +1,414 @@
+.hed {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+}
+.hed div {
+  background-color: rgb(40, 43, 47);
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hed div > a {
+  display: flex;
+  width: 120px;
+  height: 120px;
+}
+.hed div > a > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 80px;
+}
+.hed > nav {
+  height: 50%;
+  background-color: rgb(40, 43, 47);
+}
+.hed > nav > ul {
+  width: 100%;
+  height: 70%;
+}
+.hed > nav > ul > li {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  border-top: 1px solid rgb(49, 48, 48);
+}
+.hed > nav > ul > li:nth-of-type(5) > a {
+  color: rgb(120, 91, 36);
+}
+.hed > nav > ul > li:nth-of-type(6) {
+  border-bottom: 1px solid rgb(49, 48, 48);
+}
+.hed > nav > ul > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: rgb(237, 237, 237);
+  text-transform: uppercase;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  transition: 0.4s;
+}
+.hed > nav > ul > li > a:hover {
+  color: rgb(120, 91, 36);
+}
+.hed .ic {
+  width: 100%;
+  height: 20%;
+  display: flex;
+}
+.hed .ic > a {
+  display: flex;
+  width: 40px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s;
+}
+.hed .ic > a:hover {
+  background-color: rgb(98, 94, 94);
+}
+.hed .ic > a > svg {
+  width: inherit;
+  height: inherit;
+  transition: 4s;
+  display: flex;
+  padding: 5px;
+}
+
+.row > .row1 {
+  width: 100%;
+  height: 450px;
+  background-image: url(../image/banner-image1.jpg);
+  background-size: cover;
+  background-position-x: 40px;
+  background-position-y: -160px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row > .row1 > .row2 {
+  width: 500px;
+  height: 250px;
+  margin-left: 170px;
+}
+.row > .row1 > .row2 > h2 {
+  font-size: 35px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(237, 237, 237);
+  text-align: center;
+  margin-top: 100px;
+}
+.row > .row1 > .row2 > span {
+  display: block;
+  width: 130px;
+  height: 1px;
+  border: 1px solid rgb(120, 91, 36);
+  margin-top: 15px;
+  margin-left: 190px;
+}
+.row > .row1 > .row2 > p {
+  font-size: 18px;
+  color: rgb(237, 237, 237);
+  margin-top: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.loc {
+  display: flex;
+  width: 100%;
+  height: 170px;
+}
+.loc > .loc1 {
+  width: 25%;
+  height: 100%;
+  margin-left: 163px;
+}
+.loc > .loc1 > figure {
+  width: 100%;
+  height: 100%;
+}
+.loc > .loc1 > figure > img {
+  width: 100%;
+  height: 100%;
+}
+.loc > .loc2,
+.loc .loc3,
+.loc .loc4 {
+  width: 21%;
+  height: 100%;
+}
+.loc > .loc2 > figure,
+.loc .loc3 > figure,
+.loc .loc4 > figure {
+  width: 100%;
+  height: 100%;
+}
+.loc > .loc2 > figure > img,
+.loc .loc3 > figure > img,
+.loc .loc4 > figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+.khali {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(27, 26, 26);
+  display: flex;
+}
+.khali > .ms {
+  width: 1000px;
+  height: 500px;
+  margin-top: 80px;
+  margin-left: 280px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.khali > .ms > .ms1,
+.khali > .ms .ms3,
+.khali > .ms .ms6,
+.khali > .ms .ms8 {
+  width: 249px;
+  height: 250px;
+  background-color: rgb(27, 26, 26);
+}
+.khali > .ms > .ms1 > h5,
+.khali > .ms .ms3 > h5,
+.khali > .ms .ms6 > h5,
+.khali > .ms .ms8 > h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(237, 237, 237);
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.khali > .ms > .ms1 > span,
+.khali > .ms .ms3 > span,
+.khali > .ms .ms6 > span,
+.khali > .ms .ms8 > span {
+  width: 60px;
+  height: 1px;
+  border: 1px solid rgb(120, 91, 36);
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.khali > .ms > .ms1 > p,
+.khali > .ms .ms3 > p,
+.khali > .ms .ms6 > p,
+.khali > .ms .ms8 > p {
+  text-transform: capitalize;
+  color: rgb(237, 237, 237);
+  font-size: 10px;
+  line-height: 30px;
+  margin-left: 20px;
+}
+.khali > .ms > .ms1 > p > a,
+.khali > .ms .ms3 > p > a,
+.khali > .ms .ms6 > p > a,
+.khali > .ms .ms8 > p > a {
+  transition: 0.4s;
+}
+.khali > .ms > .ms1 > p > a:hover,
+.khali > .ms .ms3 > p > a:hover,
+.khali > .ms .ms6 > p > a:hover,
+.khali > .ms .ms8 > p > a:hover {
+  color: rgb(120, 91, 36);
+}
+.khali > .ms > .ms2,
+.khali > .ms .ms4,
+.khali > .ms .ms5,
+.khali > .ms .ms7 {
+  width: 250px;
+  height: 250px;
+  background-color: rgb(42, 41, 41);
+}
+.khali > .ms > .ms2 > h5,
+.khali > .ms .ms4 > h5,
+.khali > .ms .ms5 > h5,
+.khali > .ms .ms7 > h5 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(237, 237, 237);
+  margin-top: 35px;
+  margin-left: 20px;
+}
+.khali > .ms > .ms2 > span,
+.khali > .ms .ms4 > span,
+.khali > .ms .ms5 > span,
+.khali > .ms .ms7 > span {
+  width: 60px;
+  height: 1px;
+  border: 1px solid rgb(120, 91, 36);
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.khali > .ms > .ms2 > p,
+.khali > .ms .ms4 > p,
+.khali > .ms .ms5 > p,
+.khali > .ms .ms7 > p {
+  text-transform: capitalize;
+  color: rgb(237, 237, 237);
+  font-size: 10px;
+  line-height: 30px;
+  margin-left: 20px;
+}
+.khali > .ms > .ms2 > p > a,
+.khali > .ms .ms4 > p > a,
+.khali > .ms .ms5 > p > a,
+.khali > .ms .ms7 > p > a {
+  transition: 0.4s;
+}
+.khali > .ms > .ms2 > p > a:hover,
+.khali > .ms .ms4 > p > a:hover,
+.khali > .ms .ms5 > p > a:hover,
+.khali > .ms .ms7 > p > a:hover {
+  color: rgb(120, 91, 36);
+}
+
+.box7 {
+  width: 100%;
+  height: 450px;
+  background-color: #313539;
+  display: flex;
+}
+.box7 > .s6 {
+  width: 1050px;
+  height: 400px;
+  margin-left: 250px;
+  margin-top: 30px;
+}
+.box7 > .s6 > .s7 {
+  width: 1050px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(49, 48, 48);
+}
+.box7 > .s6 > .s7 > figure {
+  display: flex;
+  width: 125px;
+  height: 125px;
+}
+.box7 > .s6 > .s7 > figure > img {
+  width: 100%;
+  height: 100%;
+}
+.box7 > .s6 > .s8 {
+  width: 450px;
+  height: 130px;
+  margin-left: 300px;
+  display: flex;
+}
+.box7 > .s6 > .s8 > .s81 {
+  width: 150px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box7 > .s6 > .s8 > .s81 > svg {
+  transition: 0.4s;
+}
+.box7 > .s6 > .s8 > .s81 > svg:hover {
+  background-color: rgb(91, 91, 89);
+}
+.box7 > .s6 > .s8 > .s81 > a {
+  display: flex;
+  color: rgb(237, 237, 237);
+  text-transform: uppercase;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
+  transition: 0.4s;
+  padding-left: 5px;
+}
+.box7 > .s6 > .s8 > .s81 > a:hover {
+  color: rgb(120, 91, 36);
+}
+.box7 > .s6 > .s8 > .s82 {
+  width: 150px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box7 > .s6 > .s8 > .s82 > svg {
+  transition: 0.4s;
+}
+.box7 > .s6 > .s8 > .s82 > svg:hover {
+  background-color: rgb(91, 91, 89);
+}
+.box7 > .s6 > .s8 > .s82 > a {
+  display: flex;
+  color: rgb(237, 237, 237);
+  text-transform: uppercase;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  transition: 0.4s;
+  padding-left: 5px;
+}
+.box7 > .s6 > .s8 > .s82 > a:hover {
+  color: rgb(120, 91, 36);
+}
+.box7 > .s6 > .s8 > .s83 {
+  width: 150px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box7 > .s6 > .s8 > .s83 > svg {
+  transition: 0.4s;
+}
+.box7 > .s6 > .s8 > .s83 > svg:hover {
+  background-color: rgb(91, 91, 89);
+}
+.box7 > .s6 > .s8 > .s83 > a {
+  display: flex;
+  color: rgb(237, 237, 237);
+  text-transform: uppercase;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 11px;
+  transition: 0.4s;
+  padding-left: 5px;
+}
+.box7 > .s6 > .s8 > .s83 > a:hover {
+  color: rgb(120, 91, 36);
+}
+.box7 > .s6 > .s9 {
+  width: 1050px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(49, 48, 48);
+}
+.box7 > .s6 > .s9 > div {
+  width: 300px;
+  height: 130px;
+  margin-top: 20px;
+}
+.box7 > .s6 > .s9 > div > p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(237, 237, 237);
+  line-height: 40px;
+  transition: 0.4s;
+  padding-top: 20px;
+  margin: 5px;
+}
+.box7 > .s6 > .s9 > div > p:hover {
+  color: rgb(120, 91, 36);
+}/*# sourceMappingURL=master5.css.map */
